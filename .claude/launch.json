@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "chin-shitsumon-center",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "8648", "--directory", "site"],
+      "port": 8648
+    }
+  ]
+}

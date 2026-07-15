@@ -1,0 +1,227 @@
+/* 日本珍質問センター — 1色（えんじ）+ 無彩色。公文書の整然としたスタック */
+
+:root {
+  --color-primary: #8e3338;
+  --color-primary-strong: #722a2e;
+  --color-bg: #f4f2ee;
+  --color-paper: #fffdf8;
+  --color-paper-edge: #e6e0d2;
+  --color-text: #2b2b2b;
+  --color-text-muted: #6b6b6b;
+  --color-line: #e4e2dc;
+  --shadow-card: 0 1px 4px rgba(60, 40, 30, 0.10);
+  --z-header: 100;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-primary: #d98f94;
+    --color-primary-strong: #e3aaae;
+    --color-bg: #17171a;
+    --color-paper: #222125;
+    --color-paper-edge: #37343a;
+    --color-text: #e6e6e4;
+    --color-text-muted: #9a9a97;
+    --color-line: #2e2d32;
+    --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", "Hiragino Sans", serif;
+  font-size: 16px;
+  line-height: 1.9;
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ヘッダー */
+.site-header {
+  background: var(--color-primary);
+  color: #fff;
+  padding: 28px 0 24px;
+  border-bottom: 4px double rgba(255, 255, 255, 0.5);
+}
+
+.site-title {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+}
+
+.site-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-tagline {
+  margin: 6px 0 0;
+  font-size: 13px;
+  opacity: 0.88;
+}
+
+/* セクション */
+.section-heading {
+  font-size: 15px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  margin: 44px 0 16px;
+}
+
+.section-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.house-filter select {
+  font-size: 14px;
+  padding: 4px 8px;
+  border: 1px solid var(--color-line);
+  border-radius: 4px;
+  background: var(--color-paper);
+  color: var(--color-text);
+}
+
+/* カード = 公文書。傾けず整然と積む */
+.card-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.item-card {
+  background: var(--color-paper);
+  border: 1px solid var(--color-paper-edge);
+  border-top: 3px solid var(--color-primary);
+  box-shadow: var(--shadow-card);
+  padding: 18px 22px 14px;
+}
+
+.item-meta {
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+  margin: 0 0 8px;
+  letter-spacing: 0.08em;
+  border-bottom: 1px solid var(--color-line);
+  padding-bottom: 6px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.item-status {
+  color: var(--color-primary);
+  white-space: nowrap;
+}
+
+.item-name {
+  margin: 4px 0 6px;
+  font-size: 17.5px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.item-body {
+  margin: 0;
+  font-size: 15px;
+}
+
+.item-excerpt {
+  margin: 10px 0 0;
+  padding: 10px 14px;
+  font-size: 14px;
+  background: var(--color-bg);
+  border-left: 2px solid var(--color-paper-edge);
+}
+
+.item-excerpt dt {
+  font-weight: 600;
+  color: var(--color-text-muted);
+  font-size: 12.5px;
+  letter-spacing: 0.08em;
+}
+
+.item-excerpt dd {
+  margin: 2px 0 8px;
+}
+
+.item-excerpt dd:last-child { margin-bottom: 0; }
+
+.item-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 18px;
+}
+
+.item-actions a {
+  font-size: 13px;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.item-actions a:hover { text-decoration: underline; }
+
+/* 空状態・フッター */
+.empty-state {
+  color: var(--color-text-muted);
+  font-size: 14px;
+}
+
+.load-more-wrap {
+  text-align: center;
+  margin: 24px 0 0;
+}
+
+.load-more {
+  font-family: inherit;
+  font-size: 14px;
+  color: var(--color-primary);
+  background: var(--color-paper);
+  border: 1px solid var(--color-line);
+  border-radius: 2px;
+  padding: 8px 32px;
+  cursor: pointer;
+}
+
+.site-footer {
+  margin-top: 64px;
+  padding: 32px 0 48px;
+  border-top: 1px solid var(--color-line);
+  font-size: 12.5px;
+  color: var(--color-text-muted);
+}
+
+.site-footer p { margin: 4px 0; }
+
+.site-footer a { color: var(--color-primary); }
+
+/* 補助 */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* aboutページ */
+.about-body h2 {
+  font-size: 17px;
+  margin: 36px 0 8px;
+}
+
+.about-body p { margin: 8px 0; }
