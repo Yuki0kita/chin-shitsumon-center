@@ -3,9 +3,20 @@
 国会に提出された質問主意書のうち、題材に意外性のある質問を
 全国共通形式で配信する個人運営サイト。
 
+- 公開URL: https://chin-shitsumon-center.pages.dev/ （Cloudflare Pages）
 - 出典: 参議院・衆議院ウェブサイトの質問主意書情報
 - 収集: GitHub Actions（毎日JST 07:00、`python -m scraper.run`）
-- 配信: GitHub Pages（`site/` を静的配信）
+- 配信: Cloudflare Pages（静的シェル）+ GitHub raw（日次更新データ）。
+  GitHub Pages（yuki0kita.github.io/chin-shitsumon-center）にも同内容を自動デプロイ
+
+サイトのコード（`site/`）を変更したら、Cloudflare Pagesへ再デプロイする:
+
+```sh
+npx -y wrangler@3 pages deploy site --project-name chin-shitsumon-center --branch main
+```
+
+データ（items.json）は日次のGitHub Actionsがコミットし、サイトは
+raw.githubusercontent.com から直接読むため、データ更新に再デプロイは不要。
 
 ## セットアップ
 

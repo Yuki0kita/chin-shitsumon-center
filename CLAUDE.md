@@ -15,6 +15,14 @@
 - `site/` — 静的サイト（Vanilla JS）。`site/data/items.json` を読むだけ
 - `.github/workflows/build-deploy.yml` — 毎日JST 07:00収集→コミット→GitHub Pagesデプロイ
 
+## 公開先
+
+- 主URL: https://chin-shitsumon-center.pages.dev/ （Cloudflare Pages、wrangler@3で手動デプロイ）
+- 副URL: https://yuki0kita.github.io/chin-shitsumon-center/ （GitHub Pages、push時自動デプロイ）
+- データはapp.jsのDATA_SOURCESでGitHub rawを最優先で読むため、日次データ更新に
+  Cloudflare側の再デプロイは不要。site/のコード変更時のみ `npx -y wrangler@3 pages deploy site
+  --project-name chin-shitsumon-center --branch main` を実行する
+
 ## 開発
 
 - テスト: `.venv/bin/python -m pytest tests/`（fixturesは実レスポンスHTML）
