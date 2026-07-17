@@ -1,8 +1,9 @@
-/* 日本珍質問センター フィード描画 */
+/* 日本珍質問センター フィード描画（会話吹き出し版） */
 
 const FEATURED_THRESHOLD = 40;
 const FEATURED_COUNT = 8;
 const PAGE_SIZE = 30;
+const SNIPPET_LEN = 60;
 
 const state = {
   items: [],
@@ -10,21 +11,53 @@ const state = {
   shown: 0,
 };
 
-/** 官製の乾いた文体で1件分の本文を組み立てる */
-function officialSentence(item) {
-  let text = `第${item.session}回国会に、${item.house}議員・${item.submitter}から「${item.title}」が提出されました。`;
-  if (item.has_answer) {
-    text += "政府の答弁書は受領済みです。";
-  } else if (!item.question_url) {
-    text += "質問本文は掲載準備中です。";
-  } else {
-    text += "政府の答弁書は未受領です。";
+/** 件名の定型末尾を外して「お題」にする */
+function titleCore(title) {
+  const core = title.replace(/(等)?に(関|係)する(再)?質問主意書$/, "");
+  return core || title;
+}
+
+/** 議員側の吹き出し文 */
+function questionLine(item) {
+  return `${titleCore(item.title)}について、教えてください！`;
+}
+
+/** 政府側の吹き出し文 */
+function answerLine(item) {
+  if (item.reply) return item.reply;
+  if (item.a_excerpt) {
+    return item.a_excerpt.length > SNIPPET_LEN
+      ? item.a_excerpt.slice(0, SNIPPET_LEN) + "…"
+      : item.a_excerpt;
   }
-  return text;
+  if (item.has_answer) return "（答弁書あり。全文はリンクからどうぞ）";
+  if (!item.question_url) return "（質問はまだ公開準備中）";
+  return "（返事はまだ来ていません）";
+}
+
+/** チップの表示名と色クラス。色は返事の種類ごとに変える */
+const CHIP_CLASSES = {
+  "質問返し": "chip-dodge",
+  "回答困難": "chip-dodge",
+  "ノーコメント": "chip-mute",
+  "未把握": "chip-mute",
+  "反論": "chip-rebut",
+  "予定なし": "chip-rebut",
+  "検討中": "chip-forward",
+  "継続": "chip-forward",
+};
+
+function replyChip(item) {
+  if (item.reply_tag) {
+    return { text: item.reply_tag, cls: CHIP_CLASSES[item.reply_tag] || "chip-answer" };
+  }
+  if (item.has_answer) return { text: "回答あり", cls: "chip-answer" };
+  return { text: "返事待ち", cls: "chip-wait" };
 }
 
 function shareText(item) {
-  return `【質問主意書】第${item.session}回国会・${item.house}「${item.title}」（提出: ${item.submitter}） #日本珍質問センター`;
+  const gov = item.reply ? `→ 政府「${item.reply}」` : "";
+  return `【実在する国会質問】議員「${titleCore(item.title)}について教えて」${gov} #日本珍質問センター`;
 }
 
 function shareUrl(item) {
@@ -32,7 +65,23 @@ function shareUrl(item) {
   return `https://x.com/intent/post?text=${encodeURIComponent(shareText(item))}&url=${encodeURIComponent(url)}`;
 }
 
-function renderCard(item, { withExcerpt = false } = {}) {
+function bubbleRow({ side, face, name, text }) {
+  const row = document.createElement("div");
+  row.className = `chat-row ${side}`;
+  const faceEl = document.createElement("span");
+  faceEl.className = "chat-face";
+  faceEl.textContent = face;
+  const bubble = document.createElement("div");
+  bubble.className = "chat-bubble";
+  const nameEl = document.createElement("span");
+  nameEl.className = "chat-name";
+  nameEl.textContent = name;
+  bubble.append(nameEl, document.createTextNode(text));
+  row.append(faceEl, bubble);
+  return row;
+}
+
+function renderCard(item, { withSource = false } = {}) {
   const card = document.createElement("article");
   card.className = "item-card";
 
@@ -40,39 +89,60 @@ function renderCard(item, { withExcerpt = false } = {}) {
   meta.className = "item-meta";
   const metaLeft = document.createElement("span");
   metaLeft.textContent = `第${item.session}回国会 ・ ${item.house} ・ 第${item.number}号`;
-  const status = document.createElement("span");
-  status.className = "item-status";
-  status.textContent = item.has_answer ? "答弁受領" : "答弁待ち";
-  meta.append(metaLeft, status);
+  const chipInfo = replyChip(item);
+  const chip = document.createElement("span");
+  chip.className = `reply-chip ${chipInfo.cls}`;
+  chip.textContent = chipInfo.text;
+  meta.append(metaLeft, chip);
 
   const name = document.createElement("h3");
   name.className = "item-name";
-  name.textContent = item.title;
+  name.textContent = titleCore(item.title);
 
-  const body = document.createElement("p");
-  body.className = "item-body";
-  body.textContent = officialSentence(item);
+  const chat = document.createElement("div");
+  chat.className = "chat";
+  chat.appendChild(
+    bubbleRow({
+      side: "giin",
+      face: "議",
+      name: `${item.submitter}（${item.house}）`,
+      text: questionLine(item),
+    })
+  );
+  chat.appendChild(
+    bubbleRow({
+      side: "gov",
+      face: "政",
+      name: "政府",
+      text: answerLine(item),
+    })
+  );
 
-  card.append(meta, name, body);
+  card.append(meta, name, chat);
 
-  if (withExcerpt && (item.q_excerpt || item.a_excerpt)) {
+  if (withSource && (item.q_excerpt || item.a_excerpt)) {
+    const details = document.createElement("details");
+    details.className = "item-source";
+    const summary = document.createElement("summary");
+    summary.textContent = "原文を読む（抜粋）";
+    details.appendChild(summary);
     const dl = document.createElement("dl");
-    dl.className = "item-excerpt";
     if (item.q_excerpt) {
       const dt = document.createElement("dt");
-      dt.textContent = "質問（抜粋）";
+      dt.textContent = "質問（原文抜粋）";
       const dd = document.createElement("dd");
       dd.textContent = item.q_excerpt;
       dl.append(dt, dd);
     }
     if (item.a_excerpt) {
       const dt = document.createElement("dt");
-      dt.textContent = "政府答弁（抜粋）";
+      dt.textContent = "政府答弁（原文抜粋）";
       const dd = document.createElement("dd");
       dd.textContent = item.a_excerpt;
       dl.append(dt, dd);
     }
-    card.appendChild(dl);
+    details.appendChild(dl);
+    card.appendChild(details);
   }
 
   const actions = document.createElement("div");
@@ -120,7 +190,7 @@ function renderFeatured() {
     list.innerHTML = '<p class="empty-state">現在、注目の質問はありません。</p>';
     return;
   }
-  featured.forEach((i) => list.appendChild(renderCard(i, { withExcerpt: true })));
+  featured.forEach((i) => list.appendChild(renderCard(i, { withSource: true })));
 }
 
 function renderLatest({ reset = false } = {}) {
@@ -131,7 +201,7 @@ function renderLatest({ reset = false } = {}) {
   }
   const items = filteredItems();
   const next = items.slice(state.shown, state.shown + PAGE_SIZE);
-  next.forEach((i) => list.appendChild(renderCard(i)));
+  next.forEach((i) => list.appendChild(renderCard(i, { withSource: true })));
   state.shown += next.length;
 
   if (items.length === 0) {

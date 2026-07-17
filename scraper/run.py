@@ -1,15 +1,18 @@
 """収集の実行エントリポイント。
 
 使い方:
-    python3 -m scraper.run
+    python3 -m scraper.run [--excerpt-budget 300]
 
 MIN_SESSION 以降の全回次の一覧を両院から収集し、件名でスコアリング。
-注目質問（EXCERPT_THRESHOLD 以上）は本文・答弁の抜粋も取得する。
+注目質問（EXCERPT_THRESHOLD 以上）は質問・答弁の抜粋を取得し、
+それ以外も答弁の抜粋を予算（--excerpt-budget）の範囲で新しい順に取得する。
+答弁抜粋は「政府の返事」吹き出しの分類に使う。
 結果は data/items.json（蓄積）と site/data/items.json（配信用）へ書き出す。
 """
 
 from __future__ import annotations
 
+import argparse
 import datetime as dt
 import json
 import logging
@@ -27,6 +30,7 @@ from .constants import (
     shugiin_list_url,
 )
 from .parse import Question, extract_excerpt, parse_sangiin_list, parse_shugiin_list
+from .reply import classify_answer
 from .score import score_question
 
 logger = logging.getLogger(__name__)
@@ -72,6 +76,7 @@ def _collect_house(client: WebClient, house_is_sangiin: bool) -> list[Question]:
 
 
 def _to_record(q: Question) -> dict:
+    reply = classify_answer(q.a_excerpt)
     return {
         "id": q.item_id,
         "house": q.house,
@@ -85,6 +90,8 @@ def _to_record(q: Question) -> dict:
         "q_excerpt": q.q_excerpt,
         "a_excerpt": q.a_excerpt,
         "score": q.score,
+        "reply": reply.text if reply else "",
+        "reply_tag": reply.tag if reply else "",
     }
 
 
@@ -96,6 +103,12 @@ def _load_existing() -> dict[str, dict]:
 
 
 def main() -> None:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--excerpt-budget", type=int, default=300,
+        help="1回の実行で本文抜粋を取得する最大リクエスト数",
+    )
+    args = parser.parse_args()
     logging.basicConfig(level=logging.INFO, format="%(levelname)s %(message)s")
     client = WebClient()
     existing = _load_existing()
@@ -105,25 +118,37 @@ def main() -> None:
     )
     for q in questions:
         q.score = score_question(q)
-
-    # 注目質問の本文抜粋。既取得分（答弁済み）は再取得しない
-    fetched = 0
-    for q in sorted(questions, key=lambda x: x.score, reverse=True):
-        if q.score < EXCERPT_THRESHOLD or fetched >= EXCERPT_MAX_FETCH:
-            break
         prev = existing.get(q.item_id)
-        if prev and prev.get("q_excerpt") and (prev.get("a_excerpt") or not q.has_answer):
-            q.q_excerpt = prev["q_excerpt"]
+        if prev:
+            q.q_excerpt = prev.get("q_excerpt", "")
             q.a_excerpt = prev.get("a_excerpt", "")
-            continue
+
+    # 本文抜粋の取得。注目質問（質問+答弁）を優先し、残り予算で
+    # 全質問の答弁抜粋（政府の返事の分類に使う）を新しい順に埋める
+    budget = args.excerpt_budget
+    featured = [
+        q for q in sorted(questions, key=lambda x: x.score, reverse=True)
+        if q.score >= EXCERPT_THRESHOLD
+    ][:EXCERPT_MAX_FETCH]
+    rest = sorted(
+        (q for q in questions if q.score < EXCERPT_THRESHOLD),
+        key=lambda x: (x.session, x.number), reverse=True,
+    )
+    for q in featured + rest:
+        if budget <= 0:
+            break
         enc = _SANGIIN_ENC if q.house == HOUSE_SANGIIN else _SHUGIIN_ENC
         try:
-            q.q_excerpt = extract_excerpt(client.get(q.question_url, enc))
-            if q.answer_url:
+            is_featured = q.score >= EXCERPT_THRESHOLD
+            if is_featured and q.question_url and not q.q_excerpt:
+                q.q_excerpt = extract_excerpt(client.get(q.question_url, enc))
+                budget -= 1
+            if q.answer_url and not q.a_excerpt:
                 q.a_excerpt = extract_excerpt(client.get(q.answer_url, enc))
-            fetched += 1
+                budget -= 1
         except NotFound:
             logger.warning("本文が見つかりません: %s", q.question_url)
+    fetched = args.excerpt_budget - budget
 
     records = {q.item_id: _to_record(q) for q in questions}
     # 一覧から消えた回次の既存データは残す（保存期間の制約がないため）
