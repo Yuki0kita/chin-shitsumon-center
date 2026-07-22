@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-07-21T22:44:45+00:00",
+ "updated_at": "2026-07-22T22:53:03+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
   {
@@ -467,6 +467,22 @@
    "reply_tag": "質問返し"
   },
   {
+   "id": "h-221-42",
+   "house": "衆議院",
+   "session": 221,
+   "number": 42,
+   "title": "津島地区の住民帰還及び四者協議会の設置等に関する質問主意書",
+   "submitter": "長妻昭君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
    "id": "s-221-41",
    "house": "参議院",
    "session": 221,
@@ -483,6 +499,22 @@
    "reply_tag": "質問返し"
   },
   {
+   "id": "h-221-41",
+   "house": "衆議院",
+   "session": 221,
+   "number": 41,
+   "title": "皇位継承資格を有しない皇族の父親からお生まれになった男子のうち皇位継承資格を有した事例の有無に関する質問主意書",
+   "submitter": "長妻昭君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
    "id": "s-221-40",
    "house": "参議院",
    "session": 221,
@@ -494,6 +526,22 @@
    "has_answer": true,
    "q_excerpt": "",
    "a_excerpt": "先の答弁書（令和八年四月二十八日内閣参質二二一第三五号。以下「前回答弁書」という。）十一についてにおいて、「陸上自衛隊中央音楽隊の副隊長は、当該自衛官から御指摘の「同大会」に同行してほしいとの相談を受け、勤務時間外において「同大会」に出席したものである。」とお答えしたとおりである。お尋ねの「勤務時間内外及び陸上自衛隊の施設内外のいずれにて行われたか」及び「同行を相談した趣旨及び理由」については把握しておらず、御指摘の「前記四の判断」につ…",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
+   "id": "h-221-40",
+   "house": "衆議院",
+   "session": 221,
+   "number": 40,
+   "title": "動物の愛護及び管理に関する法律における動物愛護センターの業務の充実に関する質問主意書",
+   "submitter": "河村たかし君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
    "score": 0,
    "reply": "",
    "reply_tag": ""
@@ -515,6 +563,22 @@
    "reply_tag": ""
   },
   {
+   "id": "h-221-39",
+   "house": "衆議院",
+   "session": 221,
+   "number": 39,
+   "title": "真の積極財政を実現するための財政法第四条等の改正に関する質問主意書",
+   "submitter": "河村たかし君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
    "id": "s-221-38",
    "house": "参議院",
    "session": 221,
@@ -526,6 +590,22 @@
    "has_answer": true,
    "q_excerpt": "",
    "a_excerpt": "「脱炭素成長型経済構造移行推進対策費補助金（商用車等の電動化促進事業（タクシー・バス））交付要綱」（令和五年五月十六日環水大自発第二三〇五一六二号環境大臣制定（最終改正　令和八年二月二日）。以下「交付要綱」という。）に定める「脱炭素成長型経済構造移行推進対策費補助金（商用車等の電動化促進事業（タクシー・バス））」（以下「商用車補助金事業」という。）については、交付要綱第十四条の規定において、「補助事業者は、補助事業の開始前に、補助事業を…",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
+   "id": "h-221-38",
+   "house": "衆議院",
+   "session": 221,
+   "number": 38,
+   "title": "ギャンブルの日常化の防止等に関する質問主意書",
+   "submitter": "西村智奈美君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
    "score": 0,
    "reply": "",
    "reply_tag": ""
@@ -545,6 +625,22 @@
    "score": 25,
    "reply": "ご質問の意味がわかりませんでした",
    "reply_tag": "質問返し"
+  },
+  {
+   "id": "h-221-37",
+   "house": "衆議院",
+   "session": 221,
+   "number": 37,
+   "title": "防衛省・自衛隊における知的基盤の概念、構成及び機能に関する質問主意書",
+   "submitter": "橋本幹彦君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
   },
   {
    "id": "s-221-36",
