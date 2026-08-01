@@ -43,6 +43,17 @@
 - 各質問は「議員の吹き出し（件名から機械生成）→ 政府の吹き出し（答弁定型文のカジュアル意訳、
   scraper/reply.py で分類）」の2吹き出しで「何があったか」を一言で伝える
 
+## X自動投稿（poster/）
+
+- `poster/x_client.py` — X API v2 POST /2/tweets を OAuth 1.0a で署名（標準ライブラリのみ）。
+  文字数は全角2・半角1・URL一律23の重み付きで数える
+- `poster/compose.py` — 投稿する質問の選定と文面組み立て。はぐらかし系の答弁を優先
+- `poster/post.py` — 既定は予行演習。`--post` で実投稿。`--chance` と
+  `--min-interval-hours` で「不定期」に見せる（cronは1日3回起動し、実投稿するかは実行時に決める）
+- `.github/workflows/post-x.yml` — 認証情報（Secrets: X_API_KEY / X_API_SECRET /
+  X_ACCESS_TOKEN / X_ACCESS_SECRET）が未設定なら予行演習だけ実行して落ちない
+- 投稿済みIDは `data/posted.json`。同じ質問は二度投稿しない
+
 ## 運用ルール（編集方針）
 
 - ブロック語（score.py の `_BLOCK_TERMS`）は削らない。事故・被害・民族・薬物など
