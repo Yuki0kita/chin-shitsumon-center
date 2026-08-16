@@ -309,3 +309,18 @@ body {
 }
 
 .about-body p { margin: 8px 0; }
+
+/* 本文中のリンク。既定の青のままだとダークモードで読めなくなる */
+.about-body a,
+.archive-list a {
+  color: var(--color-primary);
+  text-underline-offset: 3px;
+}
+.about-body a:hover,
+.archive-list a:hover { text-decoration: none; }
+
+/* 珍質問アーカイブ（トップ下部の静的一覧） */
+.archive-list { list-style: none; padding: 0; margin: 0; }
+.archive-list li { padding: 0.6rem 0; border-bottom: 1px solid rgba(103, 65, 217, 0.12); }
+.archive-list li:last-child { border-bottom: none; }
+.archive-list .item-meta { display: inline; margin-left: 0.4rem; font-size: 0.85em; }

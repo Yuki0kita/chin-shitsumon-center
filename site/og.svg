@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6741d9"/>
+      <stop offset="100%" stop-color="#9059ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)"/>
+
+  <g transform="translate(90 96)">
+    <rect width="96" height="96" rx="22" fill="#ffffff"/>
+    <text x="48" y="70" font-size="58" font-weight="bold" text-anchor="middle"
+          fill="#6741d9" font-family="Hiragino Sans, Noto Sans JP, sans-serif">珍</text>
+  </g>
+
+  <text x="212" y="163" font-family="Hiragino Sans, Noto Sans JP, sans-serif"
+        font-size="52" font-weight="700" fill="#ffffff">日本珍質問センター</text>
+
+  <text x="90" y="300" font-family="Hiragino Sans, Noto Sans JP, sans-serif"
+        font-size="46" font-weight="700" fill="#ffffff">国会でホントにあった質問と、</text>
+  <text x="90" y="366" font-family="Hiragino Sans, Noto Sans JP, sans-serif"
+        font-size="46" font-weight="700" fill="#ffffff">政府のホントの返事。</text>
+
+  <g transform="translate(90 440)">
+    <rect width="560" height="64" rx="18" fill="#ffffff" opacity="0.16"/>
+    <text x="28" y="41" font-family="Hiragino Sans, Noto Sans JP, sans-serif"
+          font-size="27" fill="#ffffff">闘犬、昆虫食、タスポ、避難所ガチャ</text>
+  </g>
+
+  <text x="90" y="565" font-family="Hiragino Sans, Noto Sans JP, sans-serif"
+        font-size="24" fill="#ffffff" opacity="0.85">質問主意書を毎日収集してお届けしています</text>
+</svg>

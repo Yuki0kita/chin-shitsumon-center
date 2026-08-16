@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://chin-shitsumon-center.pages.dev/sitemap.xml

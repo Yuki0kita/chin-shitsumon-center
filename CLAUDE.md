@@ -13,7 +13,8 @@
   - `score.py` — 珍質問度。ブロック語（深刻な題材は必ず除外）が最重要
   - `run.py` — MIN_SESSION以降の回次を巡回。注目質問のみ本文・答弁抜粋を取得
 - `site/` — 静的サイト（Vanilla JS）。`site/data/items.json` を読むだけ
-- `.github/workflows/build-deploy.yml` — 毎日JST 07:00収集→コミット→GitHub Pagesデプロイ
+- `scraper/build_pages.py` — 検索の受け皿を生成する。個別ページ・sitemap・robots・404
+- `.github/workflows/build-deploy.yml` — 毎日JST 07:00収集→ページ生成→コミット→GitHub Pagesデプロイ
 
 ## 公開先
 
@@ -61,3 +62,14 @@
 - 短いカタカナ語（2文字以下）は境界チェック必須（「アイヌ」に「イヌ」を誤検出した実績あり）
 - 提出者・件名は公表情報をそのまま掲載し、評価・論評を加える文言は書かない
 - about.html の「制度や提出者を揶揄する意図はない」という編集方針の記述は消さない
+
+## SEO（構成上の前提）
+
+- **canonicalは必ず pages.dev に向ける。** 同じ内容をGitHub Pagesにも配信しているため、
+  canonicalが無いと重複コンテンツとして評価が割れる。新規ページを足すときも必ず入れる
+- **個別ページはスコア2以上のみ。** 全2908件を量産すると中身の薄いページが大量に並び、
+  サイト全体の評価を落とす。`MIN_SCORE_FOR_PAGE` を安易に下げない
+- **トップの「珍質問アーカイブ」は自動生成。** ARCHIVEマーカーの間は手で編集しない。
+  個別ページへのリンク経路と、初期HTMLに実テキストを載せる役割を兼ねている
+  （本文はJS描画のため、これが無いと検索エンジンから見て中身が空になる）
+- `site/index.html` を書き換えたら `python -m scraper.build_pages` を流し直す
