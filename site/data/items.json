@@ -1,7 +1,23 @@
 {
- "updated_at": "2026-10-14T00:43:49+00:00",
+ "updated_at": "2026-10-15T00:11:40+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
+  {
+   "id": "h-222-11",
+   "house": "衆議院",
+   "session": 222,
+   "number": 11,
+   "title": "ＲＤワーカーといわれる難病患者等の就労促進に関する質問主意書",
+   "submitter": "長妻昭君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
   {
    "id": "h-222-10",
    "house": "衆議院",
@@ -25,7 +41,7 @@
    "number": 9,
    "title": "ギャンブルの日常化の防止等に関する質問主意書",
    "submitter": "西村智奈美君",
-   "question_url": "",
+   "question_url": "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/a222009.htm",
    "answer_url": "",
    "has_answer": false,
    "q_excerpt": "",
