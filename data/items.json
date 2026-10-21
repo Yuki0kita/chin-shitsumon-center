@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-20T00:47:59+00:00",
+ "updated_at": "2026-10-21T00:14:22+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
   {
@@ -115,6 +115,22 @@
    "reply_tag": ""
   },
   {
+   "id": "s-222-5",
+   "house": "参議院",
+   "session": 222,
+   "number": 5,
+   "title": "立川広域防災基地と副首都における首都中枢機能のバックアップに関する質問主意書",
+   "submitter": "石垣 のりこ君",
+   "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222005.htm",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
    "id": "h-222-5",
    "house": "衆議院",
    "session": 222,
@@ -126,6 +142,22 @@
    "has_answer": true,
    "q_excerpt": "",
    "a_excerpt": "ＨＴＭＬファイルについてはしばらくお待ちください。ＰＤＦファイルをご覧ください。Copyright &copy; Shugiin All Rights Reserved.",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
+   "id": "s-222-4",
+   "house": "参議院",
+   "session": 222,
+   "number": 4,
+   "title": "地方議会の傍聴環境改善に関する質問主意書",
+   "submitter": "奥田 ふみよ君",
+   "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222004.htm",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
    "score": 0,
    "reply": "",
    "reply_tag": ""
@@ -147,6 +179,22 @@
    "reply_tag": ""
   },
   {
+   "id": "s-222-3",
+   "house": "参議院",
+   "session": 222,
+   "number": 3,
+   "title": "消費税率の変更に関する質問主意書",
+   "submitter": "奥田 ふみよ君",
+   "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222003.htm",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
    "id": "h-222-3",
    "house": "衆議院",
    "session": 222,
@@ -163,6 +211,22 @@
    "reply_tag": ""
   },
   {
+   "id": "s-222-2",
+   "house": "参議院",
+   "session": 222,
+   "number": 2,
+   "title": "令和八年熊本地震被災者の生活再建等支援に関する質問主意書",
+   "submitter": "奥田 ふみよ君",
+   "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222002.htm",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
    "id": "h-222-2",
    "house": "衆議院",
    "session": 222,
@@ -174,6 +238,22 @@
    "has_answer": true,
    "q_excerpt": "",
    "a_excerpt": "ＨＴＭＬファイルについてはしばらくお待ちください。ＰＤＦファイルをご覧ください。Copyright &copy; Shugiin All Rights Reserved.",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
+   "id": "s-222-1",
+   "house": "参議院",
+   "session": 222,
+   "number": 1,
+   "title": "令和八年熊本地震被災者の避難生活等支援に関する質問主意書",
+   "submitter": "奥田 ふみよ君",
+   "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222001.htm",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
    "score": 0,
    "reply": "",
    "reply_tag": ""
