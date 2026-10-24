@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-23T00:15:11+00:00",
+ "updated_at": "2026-10-24T00:08:45+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
   {
@@ -154,10 +154,10 @@
    "title": "立川広域防災基地と副首都における首都中枢機能のバックアップに関する質問主意書",
    "submitter": "石垣 のりこ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222005.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222005.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "立川広域防災基地は、昭和五十四年十一月十九日の国有財産中央審議会（当時）の答申において、「本跡地の都心との距離、地盤の安定性、気象条件その他社会的、自然的条件を考慮して」設けることとされ、また、同基地には「国の災害対策実施本部、警察及び消防等の防災関係機関の施設」等を「集中的に配して、防災対策の効率化を図る」こととされ、同答申を受けて、「立川広域防災基地（仮称）建設計画の大綱」（昭和五十九年八月二十三日立川広域防災基地（仮称）整備推進連…",
    "score": 0,
    "reply": "",
    "reply_tag": ""
@@ -186,13 +186,13 @@
    "title": "地方議会の傍聴環境改善に関する質問主意書",
    "submitter": "奥田 ふみよ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222004.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222004.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "お尋ねの「地方議会の傍聴の権利を保障すること」の意味するところが必ずしも明らかではないが、地方自治法（昭和二十二年法律第六十七号）第百十五条第一項において、「普通地方公共団体の議会の会議は、これを公開する」と規定されており、普通地方公共団体の議会において、会議における議論を住民等が適切に傍聴することができるようにすることは重要であると考えている。お尋ねの「地方議会の傍聴環境を整備し、傍聴者の要望を受けてそれらを改善する」ことについては、…",
    "score": 0,
-   "reply": "",
-   "reply_tag": ""
+   "reply": "ご質問の意味がわかりませんでした",
+   "reply_tag": "質問返し"
   },
   {
    "id": "h-222-4",
@@ -218,13 +218,13 @@
    "title": "消費税率の変更に関する質問主意書",
    "submitter": "奥田 ふみよ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222003.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222003.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "政府が主催する会議において、お尋ねの「二年間の食料品消費税率引下げ期間が終了した後、食料品以外の消費税率を現行の十％より引き上げる案」が提案されたことはなく、これを前提としたお尋ねについてお答えすることは困難である。租税及び社会保険料による負担の軽減のための飲食料品に係る消費税率の臨時的な引下げ及び就業者負担軽減支援金の支給に関する法律案を今国会に提出しているところ、それ以外に、将来の消費税率の在り方について具体的な検討を行っていない。",
    "score": 0,
-   "reply": "",
-   "reply_tag": ""
+   "reply": "お答えするのは…むずかしいです",
+   "reply_tag": "回答困難"
   },
   {
    "id": "h-222-3",
@@ -250,13 +250,13 @@
    "title": "令和八年熊本地震被災者の生活再建等支援に関する質問主意書",
    "submitter": "奥田 ふみよ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222002.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222002.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "令和八年熊本地震に関して、政府としては、熊本県に非常災害現地対策本部（災害対策基本法（昭和三十六年法律第二百二十三号）第二十五条第八項に規定する非常災害現地対策本部をいう。以下同じ。）等を置き、熊本県等を通じて住民の状況、課題等を聴取した上で、熊本県等と緊密に連携して被災者への支援を検討してきたところである。御指摘の「要請事項」の「一」について、政府としては、熊本県等の関係機関と連携し、非常災害現地対策本部等に「井戸水対応チーム」を設置…",
    "score": 0,
-   "reply": "",
-   "reply_tag": ""
+   "reply": "検討します",
+   "reply_tag": "検討中"
   },
   {
    "id": "h-222-2",
@@ -282,13 +282,13 @@
    "title": "令和八年熊本地震被災者の避難生活等支援に関する質問主意書",
    "submitter": "奥田 ふみよ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222001.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222001.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "令和八年熊本地震に関して、政府としては、熊本県に災害対策基本法（昭和三十六年法律第二百二十三号）第二十五条第八項に規定する非常災害現地対策本部等を置き、熊本県等を通じて住民の状況、課題等を聴取した上で、熊本県等と緊密に連携して被災者への支援を検討してきたところである。御指摘の「要請事項」の「一」について、政府としては、「避難生活における良好な生活環境の確保に向けた取組指針」（平成二十五年八月内閣府（防災担当）公表、令和六年十二月改定）、…",
    "score": 0,
-   "reply": "",
-   "reply_tag": ""
+   "reply": "検討します",
+   "reply_tag": "検討中"
   },
   {
    "id": "h-222-1",
