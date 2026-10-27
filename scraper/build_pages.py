@@ -190,19 +190,21 @@ def not_found_html() -> str:
   <title>ページが見つかりません｜日本珍質問センター</title>
   <meta name="robots" content="noindex">
   <link rel="icon" href="{ICON}">
-  <link rel="stylesheet" href="/css/style.css">
+  <!-- 404は任意の深さのURLで返る。GitHub Pagesではサブパス配信のためルート相対だと
+       CSS・リンクが外れる。どちらの配信先でも解決するよう正規URLで参照する -->
+  <link rel="stylesheet" href="{BASE_URL}/css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <p class="site-title"><a href="/">日本珍質問センター</a></p>
+      <p class="site-title"><a href="{BASE_URL}/">日本珍質問センター</a></p>
     </div>
   </header>
   <main class="container">
     <article class="about-body">
       <h1>ページが見つかりません</h1>
       <p>お探しのページは移動したか、URLが間違っている可能性があります。</p>
-      <p><a href="/">一覧から探す</a></p>
+      <p><a href="{BASE_URL}/">一覧から探す</a></p>
     </article>
   </main>
 </body>
