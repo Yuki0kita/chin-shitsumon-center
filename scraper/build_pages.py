@@ -147,7 +147,7 @@ def detail_html(item: dict) -> str:
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="site-title"><a href="../">日本珍質問センター</a></h1>
+      <p class="site-title"><a href="../">日本珍質問センター</a></p>
       <p class="site-tagline">国会でホントにあった質問と、政府のホントの返事を、ゆるっと配信しています。</p>
     </div>
   </header>
@@ -195,7 +195,7 @@ def not_found_html() -> str:
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="site-title"><a href="/">日本珍質問センター</a></h1>
+      <p class="site-title"><a href="/">日本珍質問センター</a></p>
     </div>
   </header>
   <main class="container">
