@@ -66,7 +66,9 @@ function shareText(item) {
 }
 
 function shareUrl(item) {
-  const url = location.origin + location.pathname;
+  // ミラー（GitHub Pages）から共有されても正規URLへ集約する
+  const canonical = document.querySelector('link[rel="canonical"]');
+  const url = canonical ? canonical.href : location.origin + location.pathname;
   return `https://x.com/intent/post?text=${encodeURIComponent(shareText(item))}&url=${encodeURIComponent(url)}`;
 }
 
