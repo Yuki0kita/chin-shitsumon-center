@@ -1,7 +1,23 @@
 {
- "updated_at": "2026-10-27T00:59:40+00:00",
+ "updated_at": "2026-10-28T00:49:09+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
+  {
+   "id": "h-222-14",
+   "house": "衆議院",
+   "session": 222,
+   "number": 14,
+   "title": "いわゆる消費税減税法案に関する質問主意書",
+   "submitter": "緒方林太郎君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
   {
    "id": "h-222-13",
    "house": "衆議院",
@@ -170,13 +186,13 @@
    "title": "就労移行支援体制加算の適正化と一般就労への移行実績の評価に関する質問主意書",
    "submitter": "石垣 のりこ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222006.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222006.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "前段のお尋ねについては、令和八年六月一日の参議院決算委員会において、上野厚生労働大臣が「御指摘の大阪市の事業所において障害福祉サービス費の不正請求に伴う指定取消処分がなされる事案が発生したことは、極めて遺憾だと考えています」と答弁しているとおりである。後段のお尋ねについては、厚生労働大臣政務官の下、厚生労働省及びこども家庭庁の担当官を構成員とし、民間有識者がアドバイザーとして参画する「障害福祉報酬改定検討チーム」（以下「報酬改定検討チー…",
    "score": 0,
-   "reply": "",
-   "reply_tag": ""
+   "reply": "検討します",
+   "reply_tag": "検討中"
   },
   {
    "id": "h-222-6",
