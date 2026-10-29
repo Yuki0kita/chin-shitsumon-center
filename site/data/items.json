@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-28T00:49:09+00:00",
+ "updated_at": "2026-10-29T01:22:24+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
   {
@@ -42,10 +42,10 @@
    "title": "政府提出の「消費税・支援金法案」に関する質問主意書",
    "submitter": "田村智子君外三名",
    "question_url": "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/a222012.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b222012.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "ＨＴＭＬファイルについてはしばらくお待ちください。ＰＤＦファイルをご覧ください。Copyright &copy; Shugiin All Rights Reserved.",
    "score": 0,
    "reply": "",
    "reply_tag": ""
