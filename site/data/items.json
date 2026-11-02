@@ -1,7 +1,23 @@
 {
- "updated_at": "2026-11-01T00:33:12+00:00",
+ "updated_at": "2026-11-02T01:06:56+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
+  {
+   "id": "h-222-19",
+   "house": "衆議院",
+   "session": 222,
+   "number": 19,
+   "title": "ｅスポーツ関連業務を活用した障害者就労支援に関する質問主意書",
+   "submitter": "小川淳也君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
   {
    "id": "h-222-18",
    "house": "衆議院",
