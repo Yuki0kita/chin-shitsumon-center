@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-09T01:18:13+00:00",
+ "updated_at": "2026-11-10T03:54:11+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
   {
@@ -41,7 +41,7 @@
    "number": 19,
    "title": "ｅスポーツ関連業務を活用した障害者就労支援に関する質問主意書",
    "submitter": "小川淳也君",
-   "question_url": "",
+   "question_url": "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/a222019.htm",
    "answer_url": "",
    "has_answer": false,
    "q_excerpt": "",
@@ -122,10 +122,10 @@
    "title": "いわゆる消費税減税法案に関する質問主意書",
    "submitter": "緒方林太郎君",
    "question_url": "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/a222014.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b222014.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "ＨＴＭＬファイルについてはしばらくお待ちください。ＰＤＦファイルをご覧ください。Copyright &copy; Shugiin All Rights Reserved.",
    "score": 0,
    "reply": "",
    "reply_tag": ""
@@ -170,13 +170,13 @@
    "title": "公助を求める国民の声に関する質問主意書",
    "submitter": "奥田 ふみよ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222011.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222011.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "前段のお尋ねの「一人当たりの家計負担」の具体的に意味するところが明らかではないため、一概にお答えすることは困難であるが、例えば、総務省の家計調査令和七年平均の結果に基づく一箇月当たりの消費支出の額は、御指摘の「独身」、「配偶者との離別」及び「死別」の「場合」を含め、単身世帯では十七万三千四十二円、二人以上の世帯では三十一万四千一円であり、これらの世帯のうち勤労者世帯の直接税、社会保険料などの非消費支出の額は、単身世帯では七万二千六百四十…",
    "score": 0,
-   "reply": "",
-   "reply_tag": ""
+   "reply": "ご質問の意味がわかりませんでした",
+   "reply_tag": "質問返し"
   },
   {
    "id": "h-222-11",
@@ -202,10 +202,10 @@
    "title": "公共交通機関等の車両・船舶の使用停止処分と利用者への影響に関する質問主意書",
    "submitter": "石垣 のりこ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222010.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222010.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "前段のお尋ねについては、御指摘の「道路運送法（昭和二十六年法律第百八十三号）、海上運送法（昭和二十四年法律第百八十七号）等の関係法令」の具体的に指し示す範囲が必ずしも明らかではないが、例えば、道路運送法（昭和二十六年法律第百八十三号）第九条第七項第三号に規定する一般旅客自動車運送事業者（以下「一般旅客自動車運送事業者」という。）に対して行う同法第四十条の規定による自動車その他の輸送施設の当該事業のための使用の停止を命ずる処分（以下「自動…",
    "score": 0,
    "reply": "",
    "reply_tag": ""
