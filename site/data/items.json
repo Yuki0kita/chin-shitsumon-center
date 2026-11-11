@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-10T03:54:11+00:00",
+ "updated_at": "2026-11-11T01:34:37+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
   {
@@ -115,6 +115,22 @@
    "reply_tag": ""
   },
   {
+   "id": "s-222-14",
+   "house": "参議院",
+   "session": 222,
+   "number": 14,
+   "title": "村山談話における「国策を誤り」との認識及び植民地支配の対象に関する質問主意書",
+   "submitter": "石垣 のりこ君",
+   "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222014.htm",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
    "id": "h-222-14",
    "house": "衆議院",
    "session": 222,
@@ -131,6 +147,22 @@
    "reply_tag": ""
   },
   {
+   "id": "s-222-13",
+   "house": "参議院",
+   "session": 222,
+   "number": 13,
+   "title": "大阪拘置所における女性被収容者の監視カメラによる監視とプライバシー保護に関する質問主意書",
+   "submitter": "石垣 のりこ君",
+   "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222013.htm",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
    "id": "h-222-13",
    "house": "衆議院",
    "session": 222,
@@ -142,6 +174,22 @@
    "has_answer": true,
    "q_excerpt": "",
    "a_excerpt": "ＨＴＭＬファイルについてはしばらくお待ちください。ＰＤＦファイルをご覧ください。Copyright &copy; Shugiin All Rights Reserved.",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
+   "id": "s-222-12",
+   "house": "参議院",
+   "session": 222,
+   "number": 12,
+   "title": "避難所の環境整備等に関する質問主意書",
+   "submitter": "奥田 ふみよ君",
+   "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222012.htm",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
    "score": 0,
    "reply": "",
    "reply_tag": ""
