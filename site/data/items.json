@@ -1,7 +1,39 @@
 {
- "updated_at": "2026-11-12T02:36:04+00:00",
+ "updated_at": "2026-11-13T02:14:55+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
+  {
+   "id": "h-222-24",
+   "house": "衆議院",
+   "session": 222,
+   "number": 24,
+   "title": "裸麦の生産費上昇を踏まえた交付金の見直しに関する質問主意書",
+   "submitter": "小川淳也君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
+   "id": "h-222-23",
+   "house": "衆議院",
+   "session": 222,
+   "number": 23,
+   "title": "叙位叙勲及び褒章の発表時期並びに官民の公平な評価に関する質問主意書",
+   "submitter": "小川淳也君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
   {
    "id": "h-222-22",
    "house": "衆議院",
