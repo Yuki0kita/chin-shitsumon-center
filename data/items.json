@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-13T02:14:55+00:00",
+ "updated_at": "2026-11-14T01:54:56+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
   {
@@ -218,10 +218,10 @@
    "title": "村山談話における「国策を誤り」との認識及び植民地支配の対象に関する質問主意書",
    "submitter": "石垣 のりこ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222014.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222014.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "一の２、３、５から７まで、８の後段並びに９の（２）及び（３）の後段、二、三の１及び２並びに四の１及び２の前段について個々の行為等がお尋ねの「国策を誤り」、「植民地支配」及び「侵略」に該当するか否かについては、個々の行為に対する評価等をめぐり様々な議論があることもあり、具体的に断定することは適当でないと考えている。お尋ねの「政策及び行為を個別に特定すること」が可能であるか否かについては、個々の行為に対する評価等をめぐり様々な議論があること…",
    "score": 0,
    "reply": "",
    "reply_tag": ""
@@ -250,13 +250,13 @@
    "title": "大阪拘置所における女性被収容者の監視カメラによる監視とプライバシー保護に関する質問主意書",
    "submitter": "石垣 のりこ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222013.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222013.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "お尋ねのような「カメラの角度や撮影範囲を調整すること、遮蔽物を設置すること等の措置を講ずること」の可否については、個々の居室の状況等に応じ、個別に判断すべきものであることから、一概にお答えすることは困難である。大阪拘置所を含む各刑事施設においては、御指摘の「女性被収容者の監視カメラ映像」について、被収容者の収容の確保等のために必要な確認を行うに当たっては、女性職員が対応することができないなどのやむを得ない場合に限り、必要な限度で男性職員…",
    "score": 0,
-   "reply": "",
-   "reply_tag": ""
+   "reply": "お答えするのは…むずかしいです",
+   "reply_tag": "回答困難"
   },
   {
    "id": "h-222-13",
@@ -282,10 +282,10 @@
    "title": "避難所の環境整備等に関する質問主意書",
    "submitter": "奥田 ふみよ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222012.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222012.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "避難所として利用される公立学校の体育館等の空調設備の整備に関する具体的な方策については、当該空調設備の設置工事の施工業者を確保することを含め、公立学校の設置者である各地方公共団体が地域の実情に応じて判断すべきものであるところ、政府としては、当該整備が計画的かつ円滑に行われるよう、各地方公共団体に対し、当該整備に要する経費について財政支援を行うとともに、当該工事の発注の見通しを早期に公表することにより、当該施工業者が計画的に当該工事の施工…",
    "score": 0,
    "reply": "",
    "reply_tag": ""
