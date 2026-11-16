@@ -1,7 +1,23 @@
 {
- "updated_at": "2026-11-15T01:26:08+00:00",
+ "updated_at": "2026-11-16T01:29:07+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
+  {
+   "id": "h-222-25",
+   "house": "衆議院",
+   "session": 222,
+   "number": 25,
+   "title": "公務員の政治的行為に関する質問主意書",
+   "submitter": "緒方林太郎君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
   {
    "id": "h-222-24",
    "house": "衆議院",
