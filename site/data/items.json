@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-16T01:29:07+00:00",
+ "updated_at": "2026-11-17T04:14:54+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
   {
@@ -57,7 +57,7 @@
    "number": 22,
    "title": "再任用教員の処遇に関する質問主意書",
    "submitter": "日野紗里亜君",
-   "question_url": "",
+   "question_url": "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/a222022.htm",
    "answer_url": "",
    "has_answer": false,
    "q_excerpt": "",
@@ -99,6 +99,22 @@
    "reply_tag": ""
   },
   {
+   "id": "s-222-19",
+   "house": "参議院",
+   "session": 222,
+   "number": 19,
+   "title": "公的給付におけるデジタル手段の利用要件と公平性に関する質問主意書",
+   "submitter": "石垣 のりこ君",
+   "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222019.htm",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
    "id": "h-222-19",
    "house": "衆議院",
    "session": 222,
@@ -106,6 +122,22 @@
    "title": "ｅスポーツ関連業務を活用した障害者就労支援に関する質問主意書",
    "submitter": "小川淳也君",
    "question_url": "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/a222019.htm",
+   "answer_url": "https://www.shugiin.go.jp/internet/itdb_shitsumon.nsf/html/shitsumon/b222019.htm",
+   "has_answer": true,
+   "q_excerpt": "",
+   "a_excerpt": "ＨＴＭＬファイルについてはしばらくお待ちください。ＰＤＦファイルをご覧ください。Copyright &copy; Shugiin All Rights Reserved.",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
+  {
+   "id": "s-222-18",
+   "house": "参議院",
+   "session": 222,
+   "number": 18,
+   "title": "デジタル商品券等を利用した地方自治体の給付事業におけるサイバーセキュリティ対策に関する質問主意書",
+   "submitter": "石垣 のりこ君",
+   "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222018.htm",
    "answer_url": "",
    "has_answer": false,
    "q_excerpt": "",
