@@ -1,7 +1,23 @@
 {
- "updated_at": "2026-11-17T04:14:54+00:00",
+ "updated_at": "2026-11-18T03:13:42+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
+  {
+   "id": "h-222-26",
+   "house": "衆議院",
+   "session": 222,
+   "number": 26,
+   "title": "財政法第四条及び地方財政法第五条に関する質問主意書",
+   "submitter": "河村たかし君",
+   "question_url": "",
+   "answer_url": "",
+   "has_answer": false,
+   "q_excerpt": "",
+   "a_excerpt": "",
+   "score": 0,
+   "reply": "",
+   "reply_tag": ""
+  },
   {
    "id": "h-222-25",
    "house": "衆議院",
@@ -170,13 +186,13 @@
    "title": "妊娠初期の流産で産後休業を取得することができない問題等の改善に関する質問主意書",
    "submitter": "塩村 あやか君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222017.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222017.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "お尋ねの「昭和二十三年当時に、当該基準を設けた医学的及び政策的根拠」については、厚生労働省に現存する資料からは確認することができず、お答えすることは困難であるが、いずれにせよ、死産の届出に関する規程（昭和二十一年厚生省令第四十二号）第二条において「死産とは妊娠第四月以後における死児の出産をいひ」と、同規程第四条において「死産の届出は、医師又は助産師の死産証書・・・を添え」ると規定しているところ、労働基準法（昭和二十二年法律第四十九号）第…",
    "score": 0,
-   "reply": "",
-   "reply_tag": ""
+   "reply": "お答えするのは…むずかしいです",
+   "reply_tag": "回答困難"
   },
   {
    "id": "h-222-17",
@@ -202,13 +218,13 @@
    "title": "妊娠初期の女性の保護と母性健康管理指導事項連絡カードの早期周知等に関する質問主意書",
    "submitter": "塩村 あやか君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222016.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222016.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "御指摘のような「誤った見解」から生ずる「懸念」に係る具体的な事例は把握していない。また、お尋ねの「妊娠初期の働く女性が、職場において妊娠の事実を伝えられず、必要な母性健康管理措置や配慮を申し出ることができない実態」については、具体的には把握していない。雇用の分野における男女の均等な機会及び待遇の確保等に関する法律（昭和四十七年法律第百十三号。以下「男女雇用機会均等法」という。）第十七条の規定により、事業主は、その雇用する女性労働者が母子…",
    "score": 0,
-   "reply": "",
-   "reply_tag": ""
+   "reply": "把握していません",
+   "reply_tag": "未把握"
   },
   {
    "id": "h-222-16",
@@ -234,10 +250,10 @@
    "title": "我が国のがん検診における組織型検診への転換及びデータ一元管理に関する質問主意書",
    "submitter": "塩村 あやか君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222015.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222015.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "御指摘の「我が国において同様の低下が見られない要因」には、各国の生活習慣等の様々な要因が影響すると考えられることから、「組織型検診の定着度合いの差異」を含め、お尋ねの「政府の客観的な分析」をお示しすることは困難である。「がん対策推進基本計画」（令和五年三月二十八日閣議決定。以下「基本計画」という。）において、「「がん予防」、「がん医療」及び「がんとの共生」の分野別目標を定め、これらの三本の柱に沿った総合的ながん対策を推進する」こととした…",
    "score": 0,
    "reply": "",
    "reply_tag": ""
