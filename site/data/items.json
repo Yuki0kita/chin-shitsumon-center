@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-20T02:45:12+00:00",
+ "updated_at": "2026-11-21T02:55:25+00:00",
  "source": "参議院・衆議院 質問主意書情報",
  "items": [
   {
@@ -218,13 +218,13 @@
    "title": "公的給付におけるデジタル手段の利用要件と公平性に関する質問主意書",
    "submitter": "石垣 のりこ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222019.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222019.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "御指摘の「事実上の受給条件」及び「代替の受給手段」の具体的に意味するところが必ずしも明らかではなく、また、「公費による給付」に係る事業等は、その趣旨、目的等により多様であることから、お尋ねについて一概にお答えすることは困難である。御指摘の「同計画の基本的な考え方」の具体的に意味するところが必ずしも明らかではないが、「デジタル社会の実現に向けた重点計画」（令和八年七月二十一日閣議決定）においては、「「デジタルの活用により、一人ひとりのニー…",
    "score": 0,
-   "reply": "",
-   "reply_tag": ""
+   "reply": "ご質問の意味がわかりませんでした",
+   "reply_tag": "質問返し"
   },
   {
    "id": "h-222-19",
@@ -250,13 +250,13 @@
    "title": "デジタル商品券等を利用した地方自治体の給付事業におけるサイバーセキュリティ対策に関する質問主意書",
    "submitter": "石垣 のりこ君",
    "question_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/syuh/s222018.htm",
-   "answer_url": "",
-   "has_answer": false,
+   "answer_url": "https://www.sangiin.go.jp/japanese/joho1/kousei/syuisyo/222/touh/t222018.htm",
+   "has_answer": true,
    "q_excerpt": "",
-   "a_excerpt": "",
+   "a_excerpt": "また、御指摘の「デジタル商品券等を利用した給付事業」は、地域の実情等を踏まえ各地方公共団体の判断において実施されているものであり、政府としては、お尋ねのような調査を行い、実態を把握することは考えていない。政府としては、株式会社ギフティが、お尋ねの「株式会社ギフティに対する第三者の不正アクセスに係る事案」の概要を公表していることは把握している。また、「デジタル商品券等を利用した給付事業」に係る「当該不正アクセスの影響」については、二市町村…",
    "score": 0,
-   "reply": "",
-   "reply_tag": ""
+   "reply": "やる予定はありません",
+   "reply_tag": "予定なし"
   },
   {
    "id": "h-222-18",
